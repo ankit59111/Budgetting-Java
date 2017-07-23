@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPaneLayout" prefHeight="740.0" prefWidth="1366.0" style="-fx-background-color: #3BB4CF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ebs.controller.SignIn">
+    <top>
+        <HBox fx:id="upperHBox" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #3094AB;" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                </Text>
+                <Button mnemonicParsing="false" onAction="#signUpClicked" style="-fx-background-color: #3094AB;" text="Sign up today." textFill="WHITE" underline="true">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <StackPane prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="320.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="500.0">
+                    <effect>
+                        <DropShadow color="#00000048" height="255.0" radius="127.0" width="255.0" />
+                    </effect>
+                </Rectangle>
+                <Circle fill="WHITE" radius="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                    <StackPane.margin>
+                        <Insets bottom="320.0" />
+                    </StackPane.margin>
+                </Circle>
+                <ImageView fitHeight="140.0" fitWidth="140.0">
+                    <image>
+                        <Image url="@images/ebs_icon.png" />
+                    </image>
+                    <StackPane.margin>
+                        <Insets bottom="320.0" />
+                    </StackPane.margin>
+                </ImageView>
+                <TextField fx:id="usernameTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="430.0" promptText="username" style="-fx-border-color: #000000; -fx-border-radius: 5;" StackPane.alignment="CENTER">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                    <StackPane.margin>
+                        <Insets bottom="120.0" />
+                    </StackPane.margin>
+                </TextField>
+                <PasswordField fx:id="passwordField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="430.0" promptText="password" style="-fx-border-color: #000000; -fx-border-radius: 5;">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="signInButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#signInButtonClicked" prefHeight="55.0" prefWidth="450.0" style="-fx-background-color: #3094AB; -fx-background-radius: 10;" text="Sign in" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <StackPane.margin>
+                        <Insets top="180.0" />
+                    </StackPane.margin>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <ImageView fx:id="passwordExclamationMark" visible="false">
+                    <image>
+                        <Image url="@images/red_exclamation_mark.png" />
+                    </image>
+                    <StackPane.margin>
+                        <Insets left="460.0" />
+                    </StackPane.margin>
+                </ImageView>
+                <ImageView fx:id="usernameExclamationMark" visible="false">
+                    <image>
+                        <Image url="@images/red_exclamation_mark.png" />
+                    </image>
+                    <StackPane.margin>
+                        <Insets bottom="120.0" left="460.0" />
+                    </StackPane.margin>
+                </ImageView>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>

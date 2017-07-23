@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ebs.controller.Credits">
+   <children>
+      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="800.0" style="-fx-background-color: #003540;">
+         <children>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="800.0" text="Credits" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#dcdcd0" height="318.0" layoutX="105.0" layoutY="123.0" stroke="#dcdcd0" strokeType="INSIDE" width="600.0" AnchorPane.bottomAnchor="172.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="110.0">
+         <effect>
+            <DropShadow color="#00000043" height="27.32" radius="13.92" spread="0.51" width="30.36" />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1d6879" height="30.0" layoutX="160.0" layoutY="147.0" stroke="#1d6879" strokeType="INSIDE" width="490.0" />
+      <Label layoutX="340.0" layoutY="151.0" text="Team Leader" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1d6879" height="30.0" layoutX="160.0" layoutY="243.0" stroke="#1d6879" strokeType="INSIDE" width="490.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="316.0" layoutY="247.0" prefHeight="23.0" prefWidth="173.0" text="Team Members" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="322.0" layoutY="192.0" prefHeight="30.0" prefWidth="200.0" text=" Anshita Srivastava" textFill="#1d6879">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <padding>
+            <Insets top="9.0" />
+         </padding>
+      </Label>
+      <Label layoutX="322.0" layoutY="285.0" prefHeight="23.0" prefWidth="168.0" text="        Ankit Singh" textFill="#1d6879">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <padding>
+            <Insets top="9.0" />
+         </padding>
+      </Label>
+      <Label layoutX="322.0" layoutY="324.0" prefHeight="23.0" prefWidth="168.0" text="   Anirudh Chauhan" textFill="#1d6879">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <padding>
+            <Insets top="9.0" />
+         </padding>
+      </Label>
+      <Label layoutX="323.0" layoutY="365.0" prefHeight="23.0" prefWidth="168.0" text="   Gaurav Gangwar" textFill="#1d6879">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <padding>
+            <Insets top="9.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

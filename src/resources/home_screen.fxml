@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ebs.controller.HomeScreen">
+    <right>
+        <TilePane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="257.0" style="-fx-background-color: #E5FFFF; -fx-border-color: #003540; -fx-border-width: 0 0 0 .5; -fx-background-radius: 4;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="637.0" prefWidth="257.0">
+               <TilePane.margin>
+                  <Insets left="15.0" />
+               </TilePane.margin>
+               <children>
+                  <VBox fx:id="monthlyExpenditureVbox" layoutX="-5.0" layoutY="1.0" prefHeight="508.0" prefWidth="235.0" style="-fx-background-color: #e5ffff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Button layoutX="11.0" layoutY="440.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onExpenditureMonthlyOverallButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Overall" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onExpenditureJanuaryButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="January" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="42.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onExpenditureFebruaryButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="February" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="42.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onExpenditureMarchButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="March" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onExpenditureAprilButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="April" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onExpenditureMayButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="May" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="160.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onExpenditureJuneButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="June" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="190.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onExpenditureJulyButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="July" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="220.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onExpenditureAugustButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="August" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="250.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onExpenditureSeptemberButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="September" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="280.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onExpenditureOctoberButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="October" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="310.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onExpenditureNovemberButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="November" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="340.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onExpenditureDecemberButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="December" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="departmentalExpenditureVbox" layoutX="-10.0" prefHeight="482.0" prefWidth="257.0" style="-fx-background-color: #e5ffff " visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Button layoutX="11.0" layoutY="245.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onOverallDepartmentExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Overall" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onEngineeringExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Engineer" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="42.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMedicalExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Medical" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="42.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onManagementExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Management" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onArtsExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Arts" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onCommerceExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Commerce" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="160.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onCollegeAdministrationExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="College Administration" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="190.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onCcpdExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="CCPD" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="categoricalExpenditureVbox" layoutY="4.0" prefHeight="478.0" prefWidth="230.0" style="-fx-background-color: #e5ffff;" visible="false" AnchorPane.topAnchor="-0.0">
+                     <children>
+                        <Button layoutX="11.0" layoutY="323.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onCategoricalOverallExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Overall" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onDebtChargesExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Debt Charges" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="42.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onFacultyExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Faculty Salary" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="42.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onInfrastructureExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Infrastructure" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onEventExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Event" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onArtLaboratoryExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="State of Art Laboratory" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="160.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onPlacementDriveExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Placement Drive" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="190.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMiscellaneousExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Miscellaneous" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="220.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onTransportationExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Transportation" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="250.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onStudentDevelopmentExpenditureButtonClicked" prefHeight="37.0" prefWidth="235.0" style="-fx-border-radius: 0;" text="Student Development Program" textFill="#003540">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Button layoutX="5.0" layoutY="569.0" mnemonicParsing="false" onAction="#openPieChart" prefHeight="63.0" prefWidth="224.0" style="-fx-background-color: #003540;" text="View Pie Chart" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </AnchorPane>
+         </children></TilePane>
+    </right>
+    <left>
+        <TilePane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="230.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="649.0" prefWidth="230.0" style="-fx-background-color: #e5ffff;">
+               <children>
+                  <VBox fx:id="monthlyRevenueVbox" layoutX="1.0" layoutY="11.0" prefHeight="479.0" prefWidth="215.0" style="-fx-background-color: #e5ffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button layoutX="11.0" layoutY="440.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onMonthlyOverallRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="Overall" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onJanuaryRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="January" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="42.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onFebruaryRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="February" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="42.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onMarchRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="March" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onAprilRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="April" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onMayRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="May" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="160.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onJuneRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="June" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="190.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onJulyRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="July" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="220.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onAugustRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="August" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="250.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onSeptemberRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="September" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="280.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onOctoberRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="October" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="310.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onNovemberRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="November" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="340.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onDecemberRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="December" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="departmentalRevenueVbox" layoutY="37.0" prefHeight="503.0" prefWidth="230.0" style="-fx-background-color: #e5ffff;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button layoutX="11.0" layoutY="245.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onDepartmentalOverallRevenuebuttonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="Overall" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onEngineeringRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="Engineering" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="42.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onMedicalRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="Medical" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="42.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onArtsRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="Arts" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onCommerceRevenuebuttonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="Commerce" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onManagemnetRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="Management" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="160.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onCollegeAdministrationRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="College Administration" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="190.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#onCcpdRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="CCPD" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="categoricalRevenueVbox" layoutY="40.0" prefHeight="499.0" prefWidth="230.0" style="-fx-background-color: #e5ffff;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button layoutX="11.0" layoutY="167.0" mnemonicParsing="false" onMouseClicked="#onCategoricalOverallRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="Overall" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button mnemonicParsing="false" onMouseClicked="#onFeesRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="Fees" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="42.0" mnemonicParsing="false" onMouseClicked="#onDonationRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="Donation" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="42.0" mnemonicParsing="false" onMouseClicked="#onGovernmentGrantsRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="Government Grants" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button mnemonicParsing="false" onMouseClicked="#onResearchSponsorRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="Research Sponser" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Button mnemonicParsing="false" onMouseClicked="#onOtherIncomeRevenueButtonClicked" prefHeight="37.0" prefWidth="229.0" style="-fx-border-radius: 0;" text="Other Income" textFill="#003540">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <ToggleButton fx:id="totalRevenueMinusExpenditureToggleButton" layoutX="8.0" layoutY="596.0" minHeight="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="203.0" style="-fx-background-color: #003540;" text="0" textFill="WHITE">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="14.0">
+                           <image>
+                              <Image url="@../../../../E-BudgettingSystem/src/resources/images/rupee-indian.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+                  <ToggleButton fx:id="totalRevenueToggleButton" layoutX="6.0" layoutY="510.0" minHeight="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="205.0" style="-fx-background-color: #16A336;" text="0" textAlignment="CENTER" textFill="WHITE">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="14.0" fitWidth="14.0">
+                           <image>
+                              <Image url="@../../../../E-BudgettingSystem/src/resources/images/rupee-indian.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+                  <ToggleButton fx:id="totalExpenditureToggleButton" layoutX="7.0" layoutY="553.0" minHeight="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="203.0" style="-fx-background-color: #D00000;" text="0" textAlignment="CENTER" textFill="WHITE">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="14.0" fitWidth="14.0">
+                           <image>
+                              <Image url="@../../../../E-BudgettingSystem/src/resources/images/rupee-indian.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+               </children>
+            </AnchorPane>
+         </children></TilePane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="650.0" prefWidth="879.0" style="-fx-background-color: #e5ffff;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox layoutX="41.0" layoutY="14.0" prefHeight="80.0" prefWidth="907.0" style="-fx-background-color: #003540;" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="2.0">
+                    <children>
+                        <AnchorPane prefHeight="55.0" prefWidth="93.0">
+                     <children>
+                        <ImageView fx:id="revenueLeftButton" fitHeight="20.0" fitWidth="20.0" layoutX="9.0" layoutY="30.0" onMouseClicked="#revenueLeftButtonClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="30.0">
+                           <image>
+                              <Image url="@images/left-arrow-2.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <StackPane layoutX="30.0" layoutY="8.0" prefHeight="64.0" prefWidth="112.0">
+                           <children>
+                              <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#16a336" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0">
+                                 <effect>
+                                    <DropShadow color="#00000092" />
+                                 </effect>
+                              </Rectangle>
+                              <Label fx:id="revenueSlider" text="Monthly" textFill="#e5ffff">
+                                 <font>
+                                    <Font name="Microsoft Sans Serif" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <ImageView fx:id="revenueRightButton" fitHeight="20.0" fitWidth="20.0" layoutX="147.0" layoutY="30.0" onMouseClicked="#revenueRightButtonClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="30.0">
+                           <image>
+                              <Image url="@images/right-arrow-2.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                        </AnchorPane>
+
+                        <AnchorPane prefHeight="80.0" prefWidth="113.0">
+                     <children>
+                        <ImageView fx:id="expenditureRightButton" fitHeight="20.0" fitWidth="20.0" layoutX="86.0" layoutY="30.0" onMouseClicked="#expenditureRightButtonClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="30.0">
+                           <image>
+                              <Image url="@images/right-arrow-2.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <StackPane layoutX="-25.0" layoutY="9.0" prefHeight="64.0" prefWidth="112.0">
+                           <children>
+                              <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d00000" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0">
+                                 <effect>
+                                    <DropShadow color="#00000092" />
+                                 </effect>
+                              </Rectangle>
+                              <Label fx:id="expenditureSlider" style="-fx-background-color: #D00000;" text="Monthly" textFill="#e5ffff">
+                                 <font>
+                                    <Font name="Microsoft Sans Serif" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <ImageView fx:id="expenditureLeftButton" fitHeight="20.0" fitWidth="20.0" layoutX="-46.0" layoutY="30.0" onMouseClicked="#expenditureLeftButtonClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="30.0">
+                           <image>
+                              <Image url="@images/left-arrow-2.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="600.0" />
+                     </HBox.margin>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+            <TableView fx:id="revenueTableView" layoutX="1.0" layoutY="83.0" prefHeight="480.0" prefWidth="450.0" stylesheets="@style.css" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="83.0">
+              <columns>
+                <TableColumn fx:id="revenueColumnOne" prefWidth="225.0" styleClass="rowHeading" text="Revenue" />
+                  <TableColumn fx:id="revenueColumnTwo" minWidth="0.0" prefWidth="225.0" text="Amount" />
+              </columns>
+            </TableView>
+            <HBox layoutX="8.0" layoutY="572.0" prefHeight="72.0" prefWidth="865.0" style="-fx-background-color: #e5ffff;">
+               <children>
+                  <AnchorPane prefHeight="175.0" prefWidth="442.0">
+                     <children>
+                        <TextField fx:id="addRevenueTextField" layoutX="-2.0" layoutY="1.0" prefHeight="27.0" prefWidth="141.0" promptText="Add Revenue" />
+                        <ComboBox fx:id="addRevenueTypeComboBox" layoutX="146.0" prefHeight="27.0" prefWidth="149.0" promptText="Select Type" />
+                        <ComboBox fx:id="addRevenueMonthComboBox" layoutX="302.0" prefHeight="27.0" prefWidth="142.0" promptText="Select Month" />
+                        <Button fx:id="addRevenueButton" layoutX="-2.0" layoutY="36.0" mnemonicParsing="false" onAction="#revenueAddButtonClicked" prefHeight="27.0" prefWidth="215.0" style="-fx-background-color: #003540;" text="Add" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="deleteRevenueButton" disable="true" layoutX="222.0" layoutY="36.0" mnemonicParsing="false" onAction="#revenueDeleteButtonClicked" prefHeight="27.0" prefWidth="221.0" style="-fx-background-color: #D00000;" text="Delete" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="72.0" prefWidth="455.0">
+                     <children>
+                        <TextField fx:id="addExpenditureTextField" layoutX="-2.0" layoutY="1.0" prefHeight="27.0" prefWidth="147.0" promptText="Add Expenditure" />
+                        <ComboBox fx:id="addExpenditureTypeComboBox" layoutX="152.0" prefHeight="27.0" prefWidth="146.0" promptText="Select Type" />
+                        <ComboBox fx:id="addExpenditureMonthComboBox" layoutX="305.0" prefHeight="27.0" prefWidth="139.0" promptText="Select Month" />
+                        <Button fx:id="addExpenditureButton" layoutX="173.0" layoutY="36.0" mnemonicParsing="false" onAction="#expenditureAddButtonClicked" prefHeight="27.0" prefWidth="136.0" style="-fx-background-color: #003540;" text="Add" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="deleteExpenditureButton" disable="true" layoutX="317.0" layoutY="36.0" mnemonicParsing="false" onAction="#expenditureDeleteButtonClicked" prefHeight="27.0" prefWidth="126.0" style="-fx-background-color: #D00000;" text="Delete" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <ComboBox fx:id="addExpenditureDepartmentComboBox" layoutX="-1.0" layoutY="36.0" prefHeight="27.0" prefWidth="166.0" promptText="Select Department" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <TableView fx:id="expenditureTableView" layoutX="460.0" layoutY="82.0" prefHeight="480.0" prefWidth="447.0" stylesheets="@style.css">
+               <columns>
+                  <TableColumn fx:id="expenditureColumnOne" prefWidth="223.0" styleClass="rowHeading" text="Expenditure" />
+                  <TableColumn fx:id="expenditureColumnTwo" minWidth="0.0" prefWidth="224.0" text="Amount" />
+               </columns>
+            </TableView>
+            </children>
+         <BorderPane.margin>
+            <Insets top="-2.0" />
+         </BorderPane.margin>
+        </AnchorPane>
+    </center>
+   <top>
+      <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #DCDCD0;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="ebs_icon" fitHeight="100.0" fitWidth="100.0">
+               <image>
+                  <Image url="@images/ebs_icon.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <VBox prefHeight="85.0" prefWidth="150.0">
+               <children>
+                  <Label text="Get started">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="34.0" prefWidth="129.0" text="Learn how to Budget like a Pro!" textFill="#514f4f" wrapText="true" />
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </HBox.margin>
+            </VBox>
+            <StackPane fx:id="upperStackPane" minWidth="-Infinity" prefHeight="100.0" prefWidth="661.0">
+               <children>
+                  <Rectangle fx:id="upperMessageRectangle" arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="500.0" StackPane.alignment="TOP_CENTER">
+                     <effect>
+                        <DropShadow color="#00000067" height="100.18" radius="49.59" width="100.18" />
+                     </effect>
+                     <StackPane.margin>
+                        <Insets left="250.0" right="150.0" top="10.0" />
+                     </StackPane.margin>
+                  </Rectangle>
+                  <VBox prefHeight="95.0" prefWidth="590.0" StackPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="upperRectangleLabel" alignment="CENTER" contentDisplay="CENTER" text="Welcome">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lowerRectangleLabel" text="E-Budgetting System let's you plan and handle your budget for the year.">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <StackPane.margin>
+                        <Insets left="140.0" top="5.0" />
+                     </StackPane.margin>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="291.0" spacing="5.0" StackPane.alignment="CENTER">
+                     <children>
+                        <RadioButton fx:id="radioButtonOne" alignment="CENTER_LEFT" mnemonicParsing="false" />
+                        <RadioButton fx:id="radioButtonTwo" mnemonicParsing="false" />
+                        <RadioButton fx:id="radioButtonThree" mnemonicParsing="false" />
+                        <RadioButton fx:id="radioButtonFour" mnemonicParsing="false" />
+                        <RadioButton fx:id="radioButtonFive" mnemonicParsing="false" prefHeight="25.0" prefWidth="0.0" />
+                     </children>
+                     <StackPane.margin>
+                        <Insets left="110.0" right="10.0" top="70.0" />
+                     </StackPane.margin>
+                  </HBox>
+               </children>
+            </StackPane>
+            <ToggleButton mnemonicParsing="false" onAction="#onCreditsButtonClicked" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #003540; -fx-background-radius: 8;" text="Credits" textFill="WHITE">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="170.0" top="30.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ToggleButton>
+            <ToggleButton layoutX="1280.0" layoutY="30.0" mnemonicParsing="false" onAction="#signOut" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #D00000; -fx-background-radius: 8;" text="Sign Out" textFill="WHITE">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ToggleButton>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

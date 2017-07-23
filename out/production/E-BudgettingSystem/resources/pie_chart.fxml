@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ebs.controller.PieCharts">
+   <children>
+      <TabPane layoutX="8.0" prefHeight="600.0" prefWidth="800.0" rotateGraphic="true" style="-fx-background-color: white;" stylesheets="@style.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="monthTab" onSelectionChanged="#monthTabClicked" styleClass="tab-pane" text="Monthly">
+               <content>
+                  <PieChart fx:id="monthlyPieChart" />
+               </content>
+          </Tab>
+          <Tab fx:id="categoricalTab" onSelectionChanged="#categoricalTabClicked" text="Categorical">
+               <content>
+                  <PieChart fx:id="categoricalPieChart" />
+               </content>
+          </Tab>
+            <Tab fx:id="departmentalTab" onSelectionChanged="#departmentalTabClicked" text="Departmental">
+               <content>
+                  <PieChart fx:id="departmentalPieChart"/>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
